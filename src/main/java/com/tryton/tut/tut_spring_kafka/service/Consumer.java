@@ -11,6 +11,6 @@ import java.io.IOException;
 public class Consumer {
     @KafkaListener(topics = "users", groupId = "group_id")
     public void consume(String message) {
-        log.info(String.format("#### -&gt; Consumed message -&gt; %s", message));
+        log.info(String.format("Consumed message: %s", message));
     }
 }
